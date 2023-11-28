@@ -2,6 +2,7 @@
 **Project Title: Currency Converter Express**
 
 **Description:**
+
 Welcome to the Currency Converter Express, a sleek and user-friendly web application designed to effortlessly convert currencies in real-time. This project leverages the power of Node.js, Express, EJS, HTML, and the Axios library to create a seamless and responsive currency conversion experience.
 
 **Key Features:**
@@ -27,15 +28,18 @@ Welcome to the Currency Converter Express, a sleek and user-friendly web applica
    ~ The project showcases effective data handling and integration techniques.
 
 **How to Run:**
+
 1. Clone the repository.
 2. Install dependencies using `npm install`.
 3. Run the application with `node index.js`.
 4. Access the application in your browser at `http://localhost:3000`.
 
 **Contributing:**
+
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request. Bug fixes, feature enhancements, and any form of improvement are appreciated.
 
 **Credits:**
+
 - This project utilizes the Axios library for efficient API communication.
 - Exchange rates are fetched from a reliable and well-documented currency exchange API.
 
