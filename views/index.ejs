@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Asap+Condensed&family=Dosis&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="heading x-center">Currency Exchange Rates</h1>
+    <div class="main">
+        <form class="main-form" action="/" method="post">
+            <div class="input-fields x-center">
+                <select name="base-currency" class="dropdown form-elements" required>
+                    <option value="">Select Base Currency</option>
+                    <% if(locals.allCountry){ %>
+                        <% for (let index = 0; index < allCountry.length; index++) { %>
+                            <option value="<%= allCountry[index] %>"> <%= allCountry[index] %> (<%= countryName[index] %>) </option>
+                        <% } %>     
+                    <% } %>
+                </select>
+
+                <input name="value" class="conversion-value form-elements" type="number" placeholder="Enter Value" required>
+
+                <select name="conversion-currency" class="dropdown form-elements">
+                    <option value="">Select Target Currency</option>
+                    <% if(locals.allCountry){ %>
+                        <% for (let index = 0; index < allCountry.length; index++) { %>
+                            <option value="<%= allCountry[index] %>"> <%= allCountry[index] %> (<%= countryName[index] %>) </option>
+                        <% } %>     
+                    <% } %>
+                </select>
+            </div>
+            <div class="submit-container x-center">
+                <button class="submit-btn form-elements" type="submit">Convert</button>
+            </div>
+        </form>
+        <footer class="result">
+            <div class="x-center">
+                <textarea class="result-area" disabled>Base Value : <%= inputValue %>
+Converted Value : <%= convertedValue %>
+
+{<%= inputValue %> = <%= convertedValue %>}
+                </textarea>
+            </div>
+            <p class="footer-note x-center" style="font-weight: 600; font-family: 'Dosis', sans-serif; letter-spacing: 1px;">*Data as of &nbsp; <b style="color: white;"><%= lastTimeUpdated %></b></p>
+        </footer>
+    </div>
+</body>
+</html>

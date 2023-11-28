@@ -1,0 +1,63 @@
+body {
+    background-color: rgba(0, 0, 0, 0.762);
+}
+
+.heading {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+}
+
+.x-center {
+    display: flex;
+    justify-content: center;
+}
+
+.form-elements {
+    margin: 0px 20px;
+    text-align: center;
+    opacity: 0.8;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 15px;
+}
+
+.dropdown {
+    padding: 10px;
+    appearance: none;
+}
+
+.input-fields {
+    margin-top: 50px;
+}
+
+.submit-container {
+    height: 50px;
+    margin-top: 50px;
+}
+
+.submit-btn {
+    background-color: rgba(121, 121, 164, 0.575);
+    border: 0;
+    font-weight: 600;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+}
+.submit-btn:hover {
+    background-color: white;
+    transition-duration: 0.3s;
+}
+
+.result-area {
+    width: 50vw;
+    height: 15vh;
+    text-align: center;
+    resize: none;
+    margin-top: 50px;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
